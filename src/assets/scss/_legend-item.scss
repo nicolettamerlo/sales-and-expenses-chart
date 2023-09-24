@@ -1,0 +1,42 @@
+// legend item
+.legend-item {
+    display: flex;
+    margin: 0px 8px 12px 8px;
+    padding: 0;
+    align-items: center;
+}
+.legend-item-box {
+    border: 1px solid $gray-light;    
+}
+.rect {
+    width: 25px;
+    height: 12px;
+    border-radius: 2px;
+}
+.rectRot {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+.circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.legend-item-label {
+    font-size: 14px;
+    padding:1px 3px 1px 4px;
+    border-radius: 3px;
+    margin: 0;
+}
+.legend-item-box:hover {
+    background-color: var(--hoverColor, red) !important;
+    border-color: var(--hoverColor, green) !important;
+}
+
+.legend-item-box:hover + .legend-item-label {
+  color: black;
+  font-weight: 500;
+}
+
